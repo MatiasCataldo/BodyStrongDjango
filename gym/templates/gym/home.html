@@ -1,0 +1,441 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <!-- ***** Preloader ***** -->
+   <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <div class="loader-logo">
+                <img src="{% static 'images/logo-header.png' %}" alt="Body Strong Logo">
+            </div>
+            <div class="loader-animation">
+                <div class="loader-bar"></div>
+                <div class="loader-bar"></div>
+                <div class="loader-bar"></div>
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+
+    <!-- ***** Main Banner Area ***** -->
+    <div class="main-banner class="container-fluid p-0"" id="top">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="{% static 'images/gym-video.mp4' %}" type="video/mp4">
+            <img src="{% static 'images/gym-fallback.jpg.mp4' %}" alt="Gimnasio Body Strong">
+        </video>
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h6>work harder, get stronger</h6>
+                <h2>Bienvenidos a <br> <em>Body Strong</em></h2>
+                <div class="main-button scroll-to-section">
+                    <a href="#sobreNosotros">CONOCENOS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** Sobre Nosotros ***** -->
+    <section class="section" id="sobreNosotros">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Sobre <em>Nosotros</em></h2>
+                        <img src="{% static 'images/line-dec.png' %}" alt="waves">
+                        <p>
+                            En Body Strong contamos con más de 20 años de experiencia en el rubro. Creemos que cada
+                            persona tiene el poder de transformarse.
+                            Somos más que un gimnasio: somos una comunidad que entrena con pasión, disciplina y
+                            compromiso.
+                            Contamos con instalaciones modernas, equipamiento de última generación y un equipo de
+                            profesionales dispuestos a acompañarte en cada paso de tu evolución física y mental.
+                        </p>
+                    </div>
+                </div>
+                <div class="features-container">
+                    <div class="features-grid">
+                        <!-- Columna 1 -->
+                        <div class="features-column">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img  src="{% static 'images/features-first-icon.png' %}" alt="Atención personalizada"
+                                        loading="lazy">
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Atención cercana y personalizada</h3>
+                                    <p>Siempre vas a encontrar un ambiente familiar y entrenadores que realmente se
+                                        preocupan por tu progreso.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img src="{% static 'images/features-first-icon.png' %}" alt="Ambiente cómodo"
+                                        loading="lazy">
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Ambiente cómodo y sin distracciones</h3>
+                                    <p>Acá venís a entrenar. Sin clases masivas, sin colas eternas para usar una
+                                        máquina. Solo vos, tus objetivos y el hierro.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img src="{% static 'images/features-first-icon.png' %}" alt="Equipamiento completo"
+                                        loading="lazy">
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Equipamiento completo y funcional</h3>
+                                    <p>Contamos lo que necesitás para entrenamientos de fuerza: pesas libres,
+                                        máquinas, bancos, mancuernas, barras y más.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="features-column">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img src="{% static 'images/features-first-icon.png' %}" alt="Horarios flexibles"
+                                        loading="lazy">
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Horarios amplios y flexibles</h3>
+                                    <p>Entrená a tu ritmo. Abrimos temprano y cerramos tarde para que puedas organizar
+                                        tus rutinas sin complicaciones.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img src="{% static 'images/features-first-icon.png' %}" alt="Acceso accesible"
+                                        loading="lazy">
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Acceso accesible y sin vueltas</h3>
+                                    <p>Precios pensados para que puedas entrenar bien, sin gastar de más. Porque la
+                                        salud no tiene por qué ser un lujo.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img src="{% static 'images/features-first-icon.png' %}" alt="Progreso físico"
+                                        loading="lazy">
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Ideal para enfocar tu progreso físico</h3>
+                                    <p>Sin clases grupales ni distracciones, el enfoque está 100% en el desarrollo de tu
+                                        cuerpo: fuerza, volumen, resistencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Sobre Nosotros End ***** -->
+
+    <!-- ***** EMPIEZA YA ***** -->
+    <section class="section" id="call-to-action">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <h2>No lo <em>pienses</em>, Empieza <em>Hoy</em>!</h2>
+                        <p>
+                            Cada persona que entra a Body Strong es única. Nos comprometemos con tu evolución física y
+                            mental, brindándote las herramientas, el acompañamiento profesional y la motivación
+                            necesaria para que logres tus metas.
+                        </p>
+                        <div class="main-button scroll-to-section">
+                            <a href="#our-classes">Empieza Ya!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** EMPIEZA YA End ***** -->
+
+    <!-- ***** PLANES ***** -->
+    <section class="section" id="our-classes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Nuestros <em>Planes</em></h2>
+                        <img src="{% static 'images/line-dec.png' %}" alt="">
+                        <p>En Body Strong queremos que puedas entrenar sin excusas. Por eso te ofrecemos planes simples,
+                            accesibles y adaptados a tus necesidades. Vos elegís el tiempo, nosotros te acompañamos en
+                            el proceso.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <div class="tabs-navigation">
+                        <ul class="tabs-list">
+                            {% for plan in membership_plans %}
+                                <li>
+                                    <button class="tab-button {% if forloop.first %}active{% endif %}" data-tab="tabs-{{ forloop.counter }}">
+                                        <span class="tab-icon">
+                                            <i class="fas 
+                                                {% if 'mensual' in plan.name.lower %}fa-calendar-alt
+                                                {% elif '2 meses' in plan.name.lower %}fa-calendar-check
+                                                {% elif '3 meses' in plan.name.lower %}fa-calendar-day
+                                                {% else %}fa-users
+                                                {% endif %}"></i>
+                                        </span>
+                                        <span class="tab-label">{{ plan.name|upper }}</span>
+                                    </button>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="tabs-actions">
+                        <a href="#horarios" class="cta-button">Consultar Horarios</a>
+                    </div>
+                </div>
+                <div class="tabs-content-wrapper" style="margin-bottom: 60px !important;">
+                    {% for plan in membership_plans %}
+                        <article id="tabs-{{ forloop.counter }}" class="tab-content {% if forloop.first %}active{% endif %}">
+                            <div class="plan-card">
+                                <div class="plan-image">
+                                    {% if plan.image %}
+                                        <img src="{{ plan.image.url }}" alt="{{ plan.name }}" loading="lazy">
+                                    {% else %}
+                                        <img src="{% static 'images/training-image-default.jpg' %}" alt="{{ plan.name }}" loading="lazy">
+                                    {% endif %}
+                                </div>
+                                <div class="plan-details">
+                                    <h3>{{ plan.name }} <span class="price">${{ plan.price|floatformat:"0" }}</span></h3>
+                                    <p>{{ plan.description }}</p>
+                                    <ul class="plan-features">
+                                        {% for feature in plan.features.splitlines %}
+                                            {% if feature.strip %}
+                                                <li><i class="fas fa-check-circle"></i> {{ feature.strip }}</li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    {% endfor %}
+                </div>
+            </div>      
+    </section>
+
+    <!-- ***** HORARIOS ***** -->
+    <section class="section" id="horarios" style="background-color: rgba(0, 0, 0, 0.596); max-width: 100% !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading dark-bg">
+                        <h2><em>Horarios</em> de Atención</h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                        <p>Entrená cuando más te convenga. Te esperamos durante toda la semana con el mejor
+                            ambiente y
+                            el equipamiento necesario para que alcances tus objetivos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="schedule-table">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th style="background-color: #343a4000;">Día</th>
+                                    <th style="background-color: #343a4000;">Horario</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="background-color: #343a4000;">Lunes a Viernes</td>
+                                    <td style="background-color: #343a4000;">08:30 hs – 22:00 hs</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #343a4000;">Sábados</td>
+                                    <td style="background-color: #343a4000;">09:00 hs – 18:00 hs</td>
+                                </tr>
+                                    <tr>
+                                        <td style="background-color: #343a4000;">Domingos</td>
+                                        <td style="background-color: #343a4000;">Cerrado</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** EQUIPO ***** -->
+    <section class="section" id="trainers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Nuestro <em>Equipo</em></h2>
+                        <img src="{% static 'images/line-dec.png' %}" alt="">
+                        <p>En Body Strong creemos que un buen gimnasio no solo se construye con pesas y máquinas, sino con personas comprometidas, 
+                            cercanas y dispuestas a ayudarte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Miembros del equipo -->
+            <div class="row">
+                {% for member in team_members %}
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <img src="{{ member.image.url }}" alt="{{ member.name }}" loading="lazy">
+                                <div class="social-links">
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <span class="position">{{ member.position }}</span>
+                                <h3 class="name">{{ member.name }}</h3>
+                                <p class="bio">{{ member.bio }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- ***** EQUIPO  End***** -->
+
+    <!-- ***** Contactenos  ***** -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Visítanos o envíanos tus datos para más información</p>
+            </div>
+            <div class="contact-grid">
+                <div class="map-container">
+                    <div class="map-header">
+                        <h3><i class="fas fa-map-marker-alt"></i> ¿Dónde estamos?</h3>
+                        <p class="map-address">
+                            <i class="fas fa-home"></i> Martín Rodríguez 1421, Villa Centenario, Banfield
+                        </p>
+                    </div>
+
+                    <!-- Mapa -->
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.7987689695456!2d-58.43701522439796!3d-34.73546637290737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd969c3702a5%3A0x2ad311aba2e498f7!2sBody%20strong!5e0!3m2!1ses-419!2sar!4v1746843159558!5m2!1ses-419!2sar"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            aria-label="Mapa de ubicación del gimnasio">
+                        </iframe>
+                    </div>
+                    <div class="map-footer">
+                        <p><i class="fas fa-clock"></i> Horario: Lunes a Viernes 7:00 - 22:00 | Sábados 9:00 -
+                            18:00</p>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="form-container" id="Inscripcion">
+                    <div class="form-header">
+                        <h3><i class="fas fa-edit"></i> Formulario de Inscripción</h3>
+                        <p>Completa tus datos y nos pondremos en contacto contigo</p>
+                    </div>
+
+                    <form id="contact-form" class="registration-form" action="#" method="post" novalidate>
+                        <div class="form-group">
+                            <label for="nombreApellido">
+                                <i class="fas fa-user"></i> Nombre y Apellido
+                            </label>
+                            <input type="text" id="nombreApellido" name="nombreApellido" required placeholder="Ej:  Juan Pérez">
+                                <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dni">
+                                    <i class="fas fa-id-card"></i> DNI
+                                </label>
+                                <input type="text" id="dni" name="dni" required placeholder="Ej: 12345678"
+                                    pattern="[0-9]{7,8}">
+                                <span class="form-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="celular">
+                                    <i class="fas fa-mobile-alt"></i> Celular
+                                </label>
+                                <input type="tel" id="celular" name="celular" required
+                                    placeholder="Ej: 1123456789" pattern="[0-9]{10,15}">
+                                <span class="form-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fechaNacimiento">
+                                    <i class="fas fa-birthday-cake"></i> Fecha de Nacimiento
+                                </label>
+                                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required
+                                    max="<?php echo date('Y-m-d'); ?>">
+                                <span class="form-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="genero">
+                                    <i class="fas fa-venus-mars"></i> Género
+                                </label>
+                                <select id="genero" name="genero" required>
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                    <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                                </select>
+                                <span class="form-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="plan-interes">
+                                <i class="fas fa-dumbbell"></i> Plan de interés
+                            </label>
+                            <select id="plan-interes" name="plan-interes">
+                                <option value="" disabled selected>Seleccione un plan (opcional)</option>
+                                <option value="mensual">Plan Mensual</option>
+                                <option value="2meses">Plan 2 Meses</option>
+                                <option value="3meses">Plan 3 Meses</option>
+                                <option value="familiar">Plan Familiar</option>
+                            </select>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Enviar inscripción
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contactenos End ***** -->
+</body>
+
+</html>
+{% endblock %}
